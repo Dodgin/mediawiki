@@ -9,7 +9,6 @@
 #
 # Further documentation for configuration settings may be found at:
 # https://www.mediawiki.org/wiki/Manual:Configuration_settings
-phpinfo();
 require_once "vendor/autoload.php";
 use Arrilot\DotEnv\DotEnv;
 if(file_exists('.env.php')) {
