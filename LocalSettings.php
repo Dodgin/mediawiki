@@ -139,9 +139,14 @@ $wgDefaultSkin = "vector";
 # End of automatically generated settings.
 # Add more configuration options below.
 
+// Skin
 wfLoadSkin('Tweeki');
 $wgDefaultSkin = 'tweeki';
 
+// Extensions
+wfLoadExtension('ParserFunctions');
+
+// Debug
 $wgShowExceptionDetails = true;
 $wgShowDBErrorBacktrace = true;
 
