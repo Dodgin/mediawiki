@@ -153,6 +153,8 @@ $wgShowDBErrorBacktrace = true;
 // Custom namespaces
 define("NS_PORTAL", 3000);
 $wgExtraNamespaces[NS_PORTAL] = "Portal";
+define("NS_MBO", 3001);
+$wgExtraNamespaces[NS_MBO] = "Moonlight Blade Online";
 
 # Prevent new user registrations except by sysops
 $wgGroupPermissions['*']['createaccount'] = false;
