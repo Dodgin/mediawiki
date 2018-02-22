@@ -141,3 +141,6 @@ $wgDefaultSkin = "vector";
 
 wfLoadSkin('Tweeki');
 $wgDefaultSkin = 'tweeki';
+
+$wgShowExceptionDetails = true;
+$wgShowDBErrorBacktrace = true;
