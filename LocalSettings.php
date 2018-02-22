@@ -162,7 +162,7 @@ $wgGroupPermissions['*']['createaccount'] = false;
 
 # But allow them to access the login page or else there will be no way to log in!
 # (You also might want to add access to "Main Page", "Help:Contents", etc.)
-//$wgWhitelistRead = array ("Special:Userlogin");
+$wgWhitelistRead = array ("Special:Userlogin");
 
 # Disable anonymous editing
 $wgGroupPermissions['*']['edit'] = false;
