@@ -174,8 +174,8 @@ $wgGroupPermissions['*']['createaccount'] = false;
 $actions = array( 'edit', 'watch', 'unwatch', 'delete','revert', 'rollback',
     'protect', 'unprotect', 'markpatrolled', 'render', 'submit', 'history', 'purge', 'info' );
 
-foreach ( $actions as $action ) {
-    $wgActionPaths[$action] = "/wiki/$action/$1";
-}
-$wgActionPaths['view'] = "/wiki/$1";
-$wgArticlePath = $wgActionPaths['view'];
+//foreach ( $actions as $action ) {
+//    $wgActionPaths[$action] = "/wiki/$action/$1";
+//}
+//$wgActionPaths['view'] = "/wiki/$1";
+//$wgArticlePath = $wgActionPaths['view'];
