@@ -153,3 +153,19 @@ $wgShowDBErrorBacktrace = true;
 // Custom namespaces
 define("NS_PORTAL", 3000);
 $wgExtraNamespaces[NS_PORTAL] = "Portal";
+
+# Prevent new user registrations except by sysops
+$wgGroupPermissions['*']['createaccount'] = false;
+
+# Disable reading by anonymous users
+//$wgGroupPermissions['*']['read'] = false;
+
+# But allow them to access the login page or else there will be no way to log in!
+# (You also might want to add access to "Main Page", "Help:Contents", etc.)
+//$wgWhitelistRead = array ("Special:Userlogin");
+
+# Disable anonymous editing
+$wgGroupPermissions['*']['edit'] = false;
+
+# Prevent new user registrations except by sysops
+$wgGroupPermissions['*']['createaccount'] = false;
