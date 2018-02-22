@@ -144,3 +144,7 @@ $wgDefaultSkin = 'tweeki';
 
 $wgShowExceptionDetails = true;
 $wgShowDBErrorBacktrace = true;
+
+// Custom namespaces
+define("NS_MBO", 3000);
+$wgExtraNamespaces[NS_MBO] = "Moonlight Blade Online";
