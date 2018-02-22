@@ -11,12 +11,18 @@
 # https://www.mediawiki.org/wiki/Manual:Configuration_settings
 require_once "vendor/autoload.php";
 use Arrilot\DotEnv\DotEnv;
-DotEnv::load('.env.php');
+if(file_exists('.env.php')) {
+    DotEnv::load('.env.php');
+}
 function env($key, $default = null)
 {
     $env = getenv($key);
     if($env) return $env;
-    else return \Arrilot\DotEnv\DotEnv::get($key, $default);
+    else {
+        if(file_exists('.env.php')) {
+            return \Arrilot\DotEnv\DotEnv::get($key, $default);
+        } return false;
+    }
 }
 
 # Protect against web entry
