@@ -170,6 +170,9 @@ $wgGroupPermissions['*']['edit'] = false;
 # Prevent new user registrations except by sysops
 $wgGroupPermissions['*']['createaccount'] = false;
 
+# Allow cloudinary links
+$wgAllowExternalImages = true;
+
 # Pretty URLs
 #$actions = array( 'edit', 'watch', 'unwatch', 'delete','revert', 'rollback',
 #    'protect', 'unprotect', 'markpatrolled', 'render', 'submit', 'history', 'purge', 'info' );
