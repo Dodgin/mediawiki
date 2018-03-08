@@ -193,3 +193,6 @@ function onOutputPageParserOutput( OutputPage &$out, ParserOutput $parseroutput 
     // Required return value of a hook function.
     return true;
 }
+
+// External links open in new tab
+$wgExternalLinkTarget = '_blank';
