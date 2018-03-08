@@ -145,6 +145,7 @@ $wgDefaultSkin = 'tweeki';
 
 // Extensions
 wfLoadExtension('ParserFunctions');
+wfLoadExtension("EmbedVideo");
 
 // Debug
 $wgShowExceptionDetails = true;
