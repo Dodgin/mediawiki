@@ -184,3 +184,12 @@ $wgAllowExternalImages = true;
 #}
 #$wgActionPaths['view'] = "/wiki/$1";
 #$wgArticlePath = $wgActionPaths['view'];
+$wgHooks['OutputPageParserOutput'][] = 'onOutputPageParserOutput';
+function onOutputPageParserOutput( OutputPage &$out, ParserOutput $parseroutput ) {
+    // $out is an instance of the OutputPage object.
+    // Add a meta tag
+    $out->addMeta( 'google-site-verification', '1ivM46-dVh_HzH1uKHk5uDMD8mWVSW1Xot-9K3skR9Y' );
+
+    // Required return value of a hook function.
+    return true;
+}
